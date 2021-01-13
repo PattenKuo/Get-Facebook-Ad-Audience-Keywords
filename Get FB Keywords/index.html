@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Get Facebook KeyWords</title>
+<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<script type='text/javascript' src='js/jquery.min.js'></script>
+<script type="text/javascript" src="js/mootools.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/patten.js"></script>
+</head>
+<body>
+	<div class="searchBox">
+		<div class="same div">
+			<input type="text" id="userInput" class="same text"><button class="same btn" onclick="StartSearch()">查询</button>
+		</div>
+	</div>
+	<div id="container">
+		<div id="example">
+			<div class="tableFilter">
+		  		<form id="tableFilter" onsubmit="myTable.filter('tableFilter'); return false;">Filter: 
+					<select id="column">
+						<option value="0">ID</option>
+						<option value="1">Name</option>
+						<option value="2">Size</option>
+						<option value="3">path</option>
+						<option value="4">description</option>
+						<option value="5">topic</option>
+					</select>
+					<input type="text" id="keyword" />
+					<input type="submit" value="Submit" />
+					<input type="reset" value="Clear" />
+				</form>
+		  </div>
+		  <table id="myTable" cellpadding="0" cellpadding="0"> 
+			<thead>
+				<th axis="number">ID</th>
+				<th axis="string">Name</th>
+				<th axis="number">Size</th>
+				<th axis="string">path</th>
+				<th axis="string">description</th>
+				<th axis="string">topic</th>
+			</thead>
+			<tbody>
+				<!-- <tr id="1">
+					<td class="rightAlign">1</td>
+					<td>Sam</td>
+					<td>Birch</td>
+					<td>Programming</td>
+					<td class="rightAlign">01/06/00</td>
+				</tr> -->
+			</tbody>
+			<tfoot>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</tfoot>
+		  </table>
+		</div>
+		</div>
+</body>
+</html>

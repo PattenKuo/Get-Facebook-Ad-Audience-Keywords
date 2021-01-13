@@ -1,0 +1,59 @@
+
+table {
+	border: 1px solid #ccc;
+	width: 100%;
+}
+th {
+	background-color: #eee;
+	background: #eee url(../images/icon-table-sort.png) no-repeat 2px 8px;
+	padding: 4px 4px 4px 14px;
+}
+tr {
+	background-color: #eee;
+	padding: 4px;
+}
+tr.altRow {
+	background-color: #fff;
+}
+td {
+	padding: 0 2px;
+}
+.rightAlign {
+	text-align: right;
+}
+.sortedASC {
+	background: url(../images/icon-table-sort-asc.png) no-repeat 2px 4px #eee;
+}
+.sortedDESC {
+	background: url(../images/icon-table-sort-desc.png) no-repeat 2px 10px #eee;
+}
+.tableHeaderOver {
+	cursor: pointer;
+	color: #354158;
+}
+/*tr.selected {
+	background-color: gold;
+	color: #fff;
+}*/
+
+tr.over {
+	background-color: #354158;
+	color: #fff;
+	cursor: pointer;
+}
+tr.hide {
+	display: none;
+}
+/***************************/
+.tableFilter {
+	border: 1px solid #ccc;
+	padding: 2px;
+	margin: 5px 0 10px 0;
+}
+.tableFilter input {
+	border: 1px solid #ccc;
+}
+.tableFilter select {
+	border: 1px solid #ccc;
+}
+
